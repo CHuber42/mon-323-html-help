@@ -10,16 +10,18 @@ $(document).ready(function(){
      return firstLetter.concat(lastLetter);
   };
     
-  function reverseCase(firstLetter, lastLetter){
-    return lastLetter.concat(firstLetter);
-  };
- 
-  alert(upperCase(firstLetter, lastLetter))
- 
-  alert(reverseCase(firstLetter, lastLetter));
+  function reverseCase(bonkers){
+    return bonkers.charAt(1) + bonkers.charAt(0);
+    };
+  
 
+  
 
-  });
+  alert(upperCase(firstLetter, lastLetter));
+ 
+  alert(reverseCase(upperCase(firstLetter,lastLetter)));
+
+});
 
   
 // $(document).ready(function(){
