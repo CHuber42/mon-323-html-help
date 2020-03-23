@@ -1,24 +1,11 @@
-var firstNum = parseInt(prompt("Please enter a number:"));
-var secondNum = parseInt(prompt("Please enter a number:"));
+jQuery("h1").click(function(){
+  alert("This is a header.");
+});
 
-function add (num1, num2) {
-  return num1 + num2;
-}
+jQuery("p").click(function(){
+  alert("This is a paragraph.");
+});
 
-function multiple(num1, num2){
-  return num1 * num2;
-};
-
-
-function subtract (num1, num2) {
-  return num1 - num2;
-};
-
-function divide (num1, num2) {
-  return num1 / num2;
-};
-
-alert(add(firstNum, secondNum));
-alert(multiple(firstNum, secondNum));
-alert(subtract(firstNum, secondNum));
-alert(divide(firstNum, secondNum));
+jQuery("img").click(function(){
+  alert("This is an image.");
+});
