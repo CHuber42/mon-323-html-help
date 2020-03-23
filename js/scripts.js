@@ -14,13 +14,17 @@ $(document).ready(function(){
     return bonkers.charAt(1) + bonkers.charAt(0);
     };
   
-
+  function thirdFunc(oneString, twoString) {
+    return oneString.concat(twoString);
+  };
+  
   
 
   alert(upperCase(firstLetter, lastLetter));
  
   alert(reverseCase(upperCase(firstLetter,lastLetter)));
 
+  alert(thirdFunc(userInput,reverseCase(upperCase(firstLetter,lastLetter))));
 });
 
   
