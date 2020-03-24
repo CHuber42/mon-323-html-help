@@ -12,19 +12,26 @@ $(document).ready(function(){
     
   function reverseCase(bonkers){
     return bonkers.charAt(1) + bonkers.charAt(0);
-    };
+  };
   
   function thirdFunc(oneString, twoString) {
     return oneString.concat(twoString);
   };
   
-  
+  function forthFunc(origInput, first, last){
+    var index = Math.floor(origInput.length / 2);
+    var indexLetter = origInput.charAt(index);
+    var postProcess = thirdFunc(origInput,reverseCase(upperCase(first,last)));
+    return indexLetter + postProcess;
+  };
 
   alert(upperCase(firstLetter, lastLetter));
  
   alert(reverseCase(upperCase(firstLetter,lastLetter)));
 
   alert(thirdFunc(userInput,reverseCase(upperCase(firstLetter,lastLetter))));
+
+  alert(forthFunc(userInput, firstLetter, lastLetter));
 });
 
   
